@@ -24,30 +24,30 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffff99
+  background-color: #CCFCCB
 }
 header {
-  background-color: #ffff99;
+  background-color: #568259;
   grid-column: 1/ span 3;
 }
 nav {
-  background-color: #99FF33;
+  background-color: #96E6B3;
   grid-column: 1/ span 3;
   grid-row: 2;
   font-family: Georgia;
 }
 
 main {
-  background-color: #CCFFFF;
+  background-color: #CCFCCB;
   text-align: center;
 }
 aside {
  
-  background-color: #99FFFF;
+  background-color: #96E6B3;
   
 }
 footer {
-  background-color: #99FF33;
+  background-color: #96E6B3;
   grid-column: 1/ span 3;
 }
 
