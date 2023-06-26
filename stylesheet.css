@@ -1,0 +1,90 @@
+.Titel{
+  text-align: center;
+  font-family: Impact;
+  font-size: 30px;
+}
+.empfohlen{
+  text-align: center;
+  
+}
+.DIY-Projekte{
+  text-align: center;
+  text-decoration: none;
+  box-shadow: none;
+}
+.impressum{
+  text-align: center;
+  text-decoration: none;
+  box-shadow: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffff99
+}
+header {
+  background-color: #ffff99;
+  grid-column: 1/ span 3;
+}
+nav {
+  background-color: #99FF33;
+  grid-column: 1/ span 3;
+  grid-row: 2;
+  font-family: Georgia;
+}
+
+main {
+  background-color: #CCFFFF;
+  text-align: center;
+}
+aside {
+ 
+  background-color: #99FFFF;
+  
+}
+footer {
+  background-color: #99FF33;
+  grid-column: 1/ span 3;
+}
+
+.gridcontainer{
+  display:grid;
+  grid-template-rows: 100px 50px 515px 50px ;
+  grid-template-columns: 2fr 1fr;
+}
+
+@media (max-width: 700px){
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  header {
+    background-color: #ff7600;
+    grid-column: 1 / span 2;
+  }
+  nav {
+    background-color: #ccc;
+    grid-column: 1 / span 2;
+  }
+  
+  main {
+    background-color: #5dc8cd;
+  }
+  aside {
+    
+    background-color: #afafe0;
+    
+  }
+  footer {
+    background-color: #006064;
+    grid-column: 1 / span 2;
+  }
+  
+  .gridcontainer{
+    
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 2fr 1fr;
+  }
+}
