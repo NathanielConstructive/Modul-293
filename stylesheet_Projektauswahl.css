@@ -1,7 +1,13 @@
+.Titel{
+  text-align: center;
+  font-family: Impact;
+  font-size: 40px;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #99FF33;
+  background-color: #568259;
 }
 
 header {
@@ -9,13 +15,19 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center; 
 }
-
+h1{
+  text-align:center;
+}
 h2 {
   font-size: 40px;
-  margin-left: 1fr;
-  margin-right: 1fr;
   color: #ffff99;
   height: 80px;
+  text-align: center;
+}
+h3{
+  text-align: left;
+  font-size: 30px;
+  padding: 0px;
 }
 
 #navigation {
@@ -57,30 +69,41 @@ h2 {
   margin-top: 10%;
   margin-bottom: 10%;
   border-radius: 5%;
-  background: #CCFFFF;
+  background: #CCFCCB;
   padding: 5%;
   width: auto;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+  text-align: left;
+  grid-template-columns: 1fr 1fr;
 }
-
+.contentimpressum{
+  margin-left: 175px;
+  margin-right:175px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 5%;
+  background: #CCFCCB;
+  padding: 5%;
+  width: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+ 
+}
 .image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 35%;
 }
-.imagerecipe{
+.imageimpressum{
   display: block;
-  margin-left: 0px ;
-  margin-right: 75px;
+  margin-left: 0px;
+  margin-right: auto;
   width: 35%;
+  padding:0px;
+ 
 }
-.headline {
-  float: right;
-  font-size: large;
-  top: 0;
-}
+
 
 .headline2 {
   float: left;
@@ -116,41 +139,7 @@ h2 {
   text-align:center ;
 }
   
-  @media (max-width: 700px){
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      background-color: #ff7600;
-      grid-column: 1 / span 2;
-    }
-    nav {
-      background-color: #ccc;
-      grid-column: 1 / span 2;
-    }
-    
-    main {
-      background-color: #5dc8cd;
-    }
-    aside {
-      
-      background-color: #afafe0;
-      
-    }
-    footer {
-      background-color: #006064;
-      grid-column: 1 / span 2;
-    }
-    
-    .gridcontainer{
-      
-      grid-template-rows: auto auto auto;
-      grid-template-columns: 2fr 1fr;
-    }
-  }
-
+  
    
 input[type="checkbox"] {
   appearance: none;
@@ -178,5 +167,40 @@ input[type="checkbox"]:checked {
     height: 25px;
     border-width: 2px;
     border-color: green;
+  }
+}
+
+@media (max-width: 700px){
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #CCFCCB;
+  }
+  header {
+    background-color: #568259;
+    grid-column: 1 / span 5;
+  }
+  nav {
+    background-color: #96E6B3;
+    grid-column: 1 / span 5;
+  }
+  
+  main {
+    background-color: #CCFCCB;
+  }
+  aside {
+
+    background-color: #CCFCCB;
+  }
+  footer {
+    background-color: #568259;
+    grid-column: 1 / span 2;
+  }
+  
+  .gridcontainer{
+    
+    grid-template-rows: auto auto auto auto ;
+    grid-template-columns:  auto ;
   }
 }
