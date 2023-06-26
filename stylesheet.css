@@ -5,12 +5,17 @@
 }
 .empfohlen{
   text-align: center;
-
+}
 .p{
   font-size: 35px;
   font-family: Libre Baskerville;
+  margin: 10px;
 }  
+h4{
+  text-align: center;
+  font-size: 30px;
 }
+
 .DIY-Projekte{
   text-align: center;
   text-decoration: none;
@@ -43,21 +48,22 @@ main {
   background-color: #CCFCCB;
   text-align: center;
   border: 1px solid black;
-}
-aside {
- 
-  background-color: #96E6B3;
+  padding: 15px;
   
 }
+aside {
+  background-color: #CCFCCB;
+}
 footer {
-  background-color: #96E6B3;
+  background-color: #568259;
   grid-column: 1/ span 3;
   border: 1px solid black;
+  text-align: center;
 }
 
 .gridcontainer{
   display:grid;
-  grid-template-rows: 100px 50px 515px 50px ;
+  grid-template-rows: 100px 50px 490px 75px ;
   grid-template-columns: 2fr 1fr;
 }
 
@@ -66,32 +72,32 @@ footer {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #CCFCCB;
   }
   header {
-    background-color: #ff7600;
-    grid-column: 1 / span 2;
+    background-color: #568259;
+    grid-column: 1 / span 5;
   }
   nav {
-    background-color: #ccc;
-    grid-column: 1 / span 2;
+    background-color: #96E6B3;
+    grid-column: 1 / span 5;
   }
   
   main {
-    background-color: #5dc8cd;
+    background-color: #CCFCCB;
   }
   aside {
-    
-    background-color: #afafe0;
-    
+
+    background-color: #CCFCCB;
   }
   footer {
-    background-color: #006064;
+    background-color: #568259;
     grid-column: 1 / span 2;
   }
   
   .gridcontainer{
     
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-columns:  auto ;
   }
 }
